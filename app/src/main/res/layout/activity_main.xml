@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/amtBorrowed_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loan Amount"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <SeekBar
+        android:id="@+id/interestRate_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:progress="10"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/loanTerm_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/loanTerm15_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 Years" />
+
+        <RadioButton
+            android:id="@+id/loanTerm20_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Years" />
+
+        <RadioButton
+            android:id="@+id/loanTerm30_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 Years" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/loansAndTaxes_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Taxes and Insurance"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/mortgageOutput_textView"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/interestRate_textView"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>
